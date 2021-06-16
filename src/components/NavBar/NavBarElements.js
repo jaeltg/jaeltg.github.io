@@ -34,9 +34,10 @@ cursor: pointer;
 font-size: 1.5rem;
 display: flex;
 align-item: center;
-margin-left: 24px;
+margin-left: 20px;
 font-weight: bold;
 text-decoration: none;
+margin-top: 20px;
 `
 export const MobileIcon = styled.div`
 display: none;
@@ -49,6 +50,8 @@ display: none;
     transform: translate(-100%, 60%);
     font-size:1.8rem;
     cursor: pointer;
+    color: black;
+    margin-right:20px;
 }
 `
 export const NavMenu = styled.ul `
@@ -78,4 +81,31 @@ cursor: pointer;
 &.active {
     border-bottom: 3px solid #c9e265
 }
+`
+export const NavBtn = styled.nav `
+display: flex;
+align-items: center;
+margin-right: 20px;
+
+@media screen and (max-width: 768px) {
+    display: none;
+}
+`
+export const LinkedIn = styled.button `
+border: none;
+background-color: transparent;
+margin-right: 5px;
+cursor: pointer;
+display: block;
+font-size: 1.8rem;
+color: #c9e265;
+`
+export const Github = styled.button `
+border: none;
+background-color: transparent;
+margin-left: 5px;
+cursor: pointer;
+display: block;
+font-size: 1.8rem;
+color: #c9e265;
 `

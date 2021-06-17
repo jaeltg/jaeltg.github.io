@@ -1,10 +1,13 @@
-import {Link} from 'react-router-dom';
-import { HomeContainer, HomeContent, HomeH1, HomeBtnWrapper} from './HomeElements';
+import Video from '../../videos/HomePageBackground.mp4'
+import { HomeContainer, HomeContent, HomeH1, HomeBtnWrapper, HomeBg, VideoBg} from './HomeElements';
 import {Button} from '../ButtonElement'
 
 const Home = () => {
     return(
         <HomeContainer id='home'>
+            <HomeBg>
+                <VideoBg autoPlay loop muted src={Video} type='video/mp4'/>
+            </HomeBg>
             <HomeContent>
                 <HomeH1>
                     Hello! I'm Jael Tinman, a new software developer!

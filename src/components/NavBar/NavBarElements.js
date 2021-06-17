@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import {Link as LinkR} from 'react-router-dom'
 import {Link as LinkS} from 'react-scroll'
 
 export const Nav = styled.nav`
@@ -27,17 +26,17 @@ width: 100%;
 padding: 0 24px;
 max-width: 1100px;
 `
-export const NavLogo = styled(LinkR)`
+export const NavLogo = styled(LinkS)`
 color: #c9e265;
 justify-self: flex-start;
 cursor: pointer;
-font-size: 1.5rem;
+font-size: 1.8rem;
 display: flex;
 align-item: center;
 margin-left: 20px;
 font-weight: bold;
 text-decoration: none;
-margin-top: 20px;
+margin-top: 23px;
 `
 export const MobileIcon = styled.div`
 display: none;
@@ -91,7 +90,7 @@ margin-right: 20px;
     display: none;
 }
 `
-export const LinkedIn = styled.button `
+export const LinkedIn = styled.a `
 border: none;
 background-color: transparent;
 margin-right: 5px;
@@ -100,7 +99,7 @@ display: block;
 font-size: 1.8rem;
 color: #c9e265;
 `
-export const Github = styled.button `
+export const Github = styled.a `
 border: none;
 background-color: transparent;
 margin-left: 5px;

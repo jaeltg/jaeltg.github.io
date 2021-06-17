@@ -2,7 +2,7 @@ import React from 'react'
 import {FaBars, FaLinkedin, FaGithub} from 'react-icons/fa'
 import {Nav, NavBarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks, NavBtn, LinkedIn, Github} from './NavBarElements';
 
-function NavBar() {
+function NavBar({toggle}) {
     return (
         <>
           <Nav>
@@ -10,7 +10,7 @@ function NavBar() {
                 <NavLogo>
                     Jael Tinman
                 </NavLogo>
-                <MobileIcon>
+                <MobileIcon onClick={toggle}>
                     <FaBars />
                 </MobileIcon>
                 <NavMenu>
@@ -25,10 +25,10 @@ function NavBar() {
                     </NavItem>
                 </NavMenu>
                 <NavBtn>
-                    <LinkedIn>
+                    <LinkedIn href="https://www.linkedin.com/in/jael-tinman-grunfeld/" target="_blank">
                         <FaLinkedin />
                     </LinkedIn>
-                    <Github>
+                    <Github href="https://github.com/jaeltg" target="_blank">
                         <FaGithub />
                     </Github>
                 </NavBtn>

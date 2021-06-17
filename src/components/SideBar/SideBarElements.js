@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import {Link as LinkR} from 'react-router-dom'
+import {Link as LinkS} from 'react-scroll'
 import {FaTimes} from 'react-icons/fa'
 
 export const SideBarContainer = styled.aside `
@@ -6,7 +8,7 @@ position: fixed;
 z-index: 999;
 width: 100%;
 height: 100%;
-background: black;
+background: #a6a6a6;
 display: grid;
 align-items: center;
 top: 0;
@@ -22,10 +24,65 @@ color: white;
 
 export const Icon = styled.div `
 position: absolute;
-top: 1.2 rem;
+top: 1.2rem;
 right: 1.5rem;
 background: transparent;
 font-size: 2rem;
 cursor: pointer;
 outline: none;
+`
+
+export const SideBarWrapper = styled.div `
+color: white;
+`
+
+export const SideBarMenu = styled.ul `
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: repeat(5, 80px);
+text-align: center;
+
+@media screen and (max-width: 480px) {
+    gird-template-rows: repeat(5, 60px;)
+}
+`
+
+export const SideBarLink = styled(LinkS)`
+display: flex;
+align-items: center;
+justify-content: center;
+font-size: 1.5rem;
+text-decoration: none;
+list-style: none;
+transition: 0.2s ease-in-out;
+color: white;
+cursor: pointer;
+
+&:hover {
+    color: #c9e265;
+    font-weight: bold;
+    transition: 0.2s ease-in-out;
+}
+`
+export const SideBtnWrap = styled.div `
+display: flex;
+justify-content: center;
+`
+export const LinkedIn = styled.a `
+border: none;
+background-color: transparent;
+margin-right: 10px;
+cursor: pointer;
+display: block;
+font-size: 2.8rem;
+color: #c9e265;
+`
+export const Github = styled.a `
+border: none;
+background-color: transparent;
+margin-left: 20px;
+cursor: pointer;
+display: block;
+font-size: 2.8rem;
+color: #c9e265;
 `

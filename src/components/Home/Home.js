@@ -4,18 +4,17 @@ import {Button} from '../ButtonElement'
 
 const Home = () => {
     return(
-        <HomeContainer>
-        <HomeContent>
-            <HomeH1>
-                Hello! I'm Jael Tinman, a new software developer!
-            </HomeH1>
-            <HomeBtnWrapper>
-                <Button to='work' primary='true' dark='true'>
-                    View My Work
-                </Button> 
-            </HomeBtnWrapper> 
-        </HomeContent>    
-             
+        <HomeContainer id='home'>
+            <HomeContent>
+                <HomeH1>
+                    Hello! I'm Jael Tinman, a new software developer!
+                </HomeH1>
+                <HomeBtnWrapper>
+                    <Button to='work' primary='true' dark='true'>
+                        View My Work
+                    </Button> 
+                </HomeBtnWrapper> 
+            </HomeContent>        
         </HomeContainer>
     )
 }

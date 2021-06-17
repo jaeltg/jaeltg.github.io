@@ -13,7 +13,14 @@ const Info = ({id, lightBg, imgStart, topLine, lightText, headLine, darkText, de
                           <Heading lightText={lightText}>{headLine}</Heading>
                           <Subtitle darkText={darkText}>{description}</Subtitle>
                           <BtnWrap>
-                              <Button to='home' dark={dark} primary={primary}>{buttonLabel}</Button>
+                              <Button to='home' 
+                              smooth={true}
+                              duration={500}
+                              spy={true}
+                              exact="true"
+                              offset={-80}
+                              dark={dark} 
+                              primary={primary}>{buttonLabel}</Button>
                           </BtnWrap>
                       </TextWrapper>
                   </Column1>

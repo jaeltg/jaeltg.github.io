@@ -8,7 +8,7 @@ export const homeObjOne = {
     description: 'blah blah blah',
     buttonLabel: 'Say Hello',
     imgStart: false,
-    img: require('../../images/AboutMe.png'),
+    img: require('../../images/1.png'),
     alt: 'Me',
     dark: true,
     primary: true,

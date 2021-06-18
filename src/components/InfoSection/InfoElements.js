@@ -40,7 +40,7 @@ grid-area: col1;
 
 export const Column2 = styled.div `
 margin-bottom: 15px;
-padding: 0 15px;
+padding: 0 80px;
 grid-area: col2;
 `
 
@@ -86,13 +86,13 @@ justify-content: flex-start;
 `
 
 export const ImgWrap = styled.div `
-max-width: 555px;
+max-width: ${({imgBig}) => (imgBig ? '400px' : '555px')};
 height: 100%
 `
 
 export const Img = styled.img `
-width: 100%;
+width: ${({imgBig}) => (imgBig ? '400px' : '100%')};
 margin: 0 0 10px 0;
 padding-right: 0;
-max-height: 850px;
+max-height: ${({imgBig}) => (imgBig ? '750px' : '850px')};
 `

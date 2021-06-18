@@ -1,7 +1,7 @@
 import {WorkContainer, WorkH1, WorkWrapper, WorkCard, WorkImage, WorkH2, WorkP} from './WorkListElements'
-import Image1 from '../../images/1.png'
-import Image2 from '../../images/1.png'
-import Image3 from '../../images/1.png'
+import Image1 from '../../images/contact.svg'
+import Image2 from '../../images/contact.svg'
+import Image3 from '../../images/contact.svg'
 
 const WorkList = () => {
     return(

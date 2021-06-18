@@ -14,7 +14,14 @@ const Home = () => {
                     <br/> a new software developer!
                 </HomeH1>
                 <HomeBtnWrapper>
-                    <Button to='work' primary='true' dark='true'>
+                    <Button to='work' 
+                            primary='true' 
+                            dark='true'  
+                            smooth={true}
+                            duration={500}
+                            spy={true}
+                            exact="true"
+                            offset={-80}>
                         View My Work
                     </Button> 
                 </HomeBtnWrapper> 

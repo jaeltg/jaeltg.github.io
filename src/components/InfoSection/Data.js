@@ -7,12 +7,13 @@ export const infoObjOne = {
     headLine: 'About Me',
     description: 'blah blah blah',
     buttonLabel: 'Say Hello',
-    imgStart: false,
+    imgStart: true,
     img: require('../../images/Jael.JPG').default,
     alt: 'Me',
     dark: true,
     primary: false,
     darkText: false,
+    imgBig: true,
 }
 
 export const infoObjTwo = {
@@ -25,9 +26,10 @@ export const infoObjTwo = {
     description: 'blah blah blah',
     buttonLabel: 'Say Hello',
     imgStart: false,
-    img: require('../../images/contact.svg'),
+    img: require('../../images/contact.svg').default,
     alt: 'Contact',
     dark: true,
     primary: false,
     darkText: false,
+    imgBig: false,
 }

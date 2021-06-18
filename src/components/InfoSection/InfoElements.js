@@ -91,7 +91,7 @@ height: 100%
 `
 
 export const Img = styled.img `
-width: ${({imgBig}) => (imgBig ? '400px' : '100%')};
+width: ${({imgBig}) => (imgBig ? '100%' : '100%')};
 margin: 0 0 10px 0;
 padding-right: 0;
 max-height: ${({imgBig}) => (imgBig ? '750px' : '850px')};

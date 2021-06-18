@@ -3,12 +3,13 @@ import {Link as LinkS} from 'react-scroll'
 
 export const Button = styled(LinkS)`
 border-radius: 8px;
-background: ${({primary}) => (primary ? '#c9e265' : 'black')};
+background: ${({primary}) => (primary ? '#c9e265' : '#EBEBEB')};
 white-space: nowrap;
 padding: ${({big}) => (big ? '14px 48px' : '12px 30px')};
-color: ${({dark}) => (dark ? 'black' : 'white')};
+color: ${({primary}) => (primary ? 'black' : '#A3A3A3')};
 font-size: ${({fontBig}) => (fontBig ? '20px' : '16px')};
 outline: none;
+font-weight: bold;
 border: none;
 cursor: pointer;
 display: flex;
@@ -19,7 +20,8 @@ transition: all 0.2s ease-in-out;
 
 &:hover {
     transition: all 0.2s ease-in-out;
-    background: ${({primary}) => (primary ? 'grey' : 'white')};
+    background: ${({primary}) => (primary ? '#A3A3A3' : '#A3A3A3')};
+    color: ${({primary}) => (primary ? 'white' : 'white')};
 
 }
 `

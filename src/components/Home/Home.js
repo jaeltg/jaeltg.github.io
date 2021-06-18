@@ -10,7 +10,8 @@ const Home = () => {
             </HomeBg>
             <HomeContent>
                 <HomeH1>
-                    Hello! I'm Jael Tinman, a new software developer!
+                    Hello! I'm <br/> <span className="name">Jael Tinman</span>
+                    <br/> a new software developer!
                 </HomeH1>
                 <HomeBtnWrapper>
                     <Button to='work' primary='true' dark='true'>

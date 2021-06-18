@@ -11,6 +11,6 @@ export const homeObjOne = {
     img: require('../../images/1.png'),
     alt: 'Me',
     dark: true,
-    primary: true,
+    primary: false,
     darkText: false,
 }

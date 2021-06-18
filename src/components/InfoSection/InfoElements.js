@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const InfoContainer = styled.div `
 color: black;
-background: ${({lightBg}) => (lightBg ? 'white' : 'grey')};
+background: ${({lightBg}) => (lightBg ? 'white' : '#c9e265')};
 
 @media screen and (max-width: 768px) {
     padding: 100px 0;
@@ -65,7 +65,7 @@ margin-bottom: 24px;
 font-size: 48px;
 line-height: 1.1;
 font-weight: 600;
-color: ${({lightText}) => (lightText ? 'black' : 'white')};
+color: ${({lightText}) => (lightText ? 'white' : 'black')};
 
 @media sreen and (max-width: 480px) {
     font-size: 32px;
@@ -77,7 +77,7 @@ max-width: 440px;
 margin-bottom: 35px;
 font-size: 18px;
 line-height: 24px;
-color: ${({darkText}) => (darkText ? 'white' : 'black')};
+color: ${({darkText}) => (darkText ? 'black' : 'white')};
 `
 
 export const BtnWrap = styled.div `

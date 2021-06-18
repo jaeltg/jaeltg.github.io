@@ -2,9 +2,9 @@ import styled from 'styled-components'
 import {Link as LinkS} from 'react-scroll'
 
 export const Nav = styled.nav`
-    background: ${({scrollNav}) => (scrollNav ? 'white' : 'transparent')};
+    background: ${({scrollNav}) => (scrollNav ? '#ffffff' : 'transparent')};
     height: 80px;
-    ${'' /* margin-top: -80px; */}
+    margin-top: -80px;
     display: flex;
     justify-content: center;
     align-items:center;
@@ -49,7 +49,7 @@ display: none;
     transform: translate(-100%, 60%);
     font-size:1.8rem;
     cursor: pointer;
-    color: black;
+    color: #A3A3A3;
     margin-right:20px;
 }
 `
@@ -76,9 +76,17 @@ text-decoration: none;
 padding: 0 1rem;
 height:100%;
 cursor: pointer;
+color: #A3A3A3;
+font-weight: bold;
 
 &.active {
-    border-bottom: 3px solid #c9e265
+    border-bottom: 3px solid #A3A3A3
+}
+
+&:hover {
+    color: #c9e265;
+    font-weight: bolder;
+    transition: 0.2s ease-in-out;
 }
 `
 export const NavBtn = styled.nav `

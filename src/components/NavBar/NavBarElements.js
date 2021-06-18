@@ -28,15 +28,15 @@ max-width: 1100px;
 `
 export const NavLogo = styled(LinkS)`
 color: #c9e265;
-justify-self: flex-start;
+justify-content: flex-start;
 cursor: pointer;
 font-size: 1.8rem;
 display: flex;
-align-item: center;
+align-items: center;
 margin-left: 20px;
 font-weight: bold;
 text-decoration: none;
-margin-top: 23px;
+${'' /* margin-top: 23px; */}
 `
 export const MobileIcon = styled.div`
 display: none;

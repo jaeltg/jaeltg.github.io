@@ -10,13 +10,31 @@ const SideBar = ({isOpen, toggle}) => {
             </Icon>
             <SideBarWrapper>
                 <SideBarMenu>
-                    <SideBarLink to="about" onClick={toggle}>
+                    <SideBarLink to="about" 
+                    onClick={toggle}
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={-80}>
                         About Me
                     </SideBarLink>
-                    <SideBarLink to="work" onClick={toggle}>
+                    <SideBarLink to="work" 
+                    onClick={toggle}
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={-80}>
                         My Work
                     </SideBarLink>
-                    <SideBarLink to="contact" onClick={toggle}>
+                    <SideBarLink to="contact" 
+                    onClick={toggle}
+                    smooth={true}
+                    duration={500}
+                    spy={true}
+                    exact="true"
+                    offset={-80}>
                         Contact Me
                     </SideBarLink>
                 </SideBarMenu> 

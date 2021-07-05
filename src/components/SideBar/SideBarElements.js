@@ -76,6 +76,11 @@ cursor: pointer;
 display: block;
 font-size: 2.8rem;
 color: #c9e265;
+
+&:hover {
+    font-size: 3.2rem;
+    transition: 0.2s ease-in-out;
+}
 `
 export const Github = styled.a `
 border: none;
@@ -85,4 +90,9 @@ cursor: pointer;
 display: block;
 font-size: 2.8rem;
 color: #c9e265;
+
+&:hover {
+    font-size: 3.2rem;
+    transition: 0.2s ease-in-out;
+}
 `

@@ -6,8 +6,9 @@ export const Nav = styled.nav`
     height: 80px;
     margin-top: -80px;
     display: flex;
-    justify-content: center;
-    align-items:center;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
     font-size: 1 rem;
     position: sticky;
     top: 0;
@@ -24,7 +25,7 @@ height: 80px;
 z-index: 1;
 width: 100%;
 padding: 0 24px;
-max-width: 1100px;
+max-width: 1300px;
 `
 export const NavLogo = styled(LinkS)`
 color: #c9e265;
@@ -33,10 +34,9 @@ cursor: pointer;
 font-size: 1.8rem;
 display: flex;
 align-items: center;
-margin-left: 20px;
 font-weight: bold;
+margin-left: 20px;
 text-decoration: none;
-${'' /* margin-top: 23px; */}
 `
 export const MobileIcon = styled.div`
 display: none;
@@ -80,7 +80,11 @@ color: #A3A3A3;
 font-weight: bold;
 
 &.active {
-    border-bottom: 3px solid #A3A3A3
+    color: #c9e265;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    transition: 0.2s ease-in-out;
+
 }
 
 &:hover {
@@ -106,6 +110,11 @@ cursor: pointer;
 display: block;
 font-size: 1.8rem;
 color: #c9e265;
+
+&:hover {
+    font-size: 2.2rem;
+    transition: 0.2s ease-in-out;
+}
 `
 export const Github = styled.a `
 border: none;
@@ -115,4 +124,9 @@ cursor: pointer;
 display: block;
 font-size: 1.8rem;
 color: #c9e265;
+
+&:hover {
+    font-size: 2.2rem;
+    transition: 0.2s ease-in-out;
+}
 `

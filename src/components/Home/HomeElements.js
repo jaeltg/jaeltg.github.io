@@ -6,7 +6,7 @@ justify-content: center;
 align-items: center;
 padding: 0 30px;
 position: relative;
-height: 800px;
+height: 850px;
 z-index: 1;
 `
 export const HomeBg = styled.div `

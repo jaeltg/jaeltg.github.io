@@ -16,7 +16,7 @@ const About = () => {
                           <Subtitle>Technologies</Subtitle>
                           <p>React, Vue, Spring, Express, MongoDB, Flask, PostgreSQL</p>
                           <Subtitle>
-                          <a>Download CV</a>
+                          Download CV
                           </Subtitle>
                           <BtnWrap>
                               <Button to='contact' 

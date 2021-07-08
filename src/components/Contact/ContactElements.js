@@ -113,3 +113,12 @@ padding-right: 0;
 max-height:750px;
 border-radius: 30px;
 `
+
+export const PDF = styled.a `
+color: #A3A3A3;
+text-decoration: none;
+
+&:hover {
+    color: white;
+}
+`

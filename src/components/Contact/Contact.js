@@ -2,7 +2,7 @@ import {Button} from '../ButtonElement'
 import {AiOutlinePhone, AiOutlineLinkedin} from 'react-icons/ai'
 import {HiOutlineMail} from 'react-icons/hi'
 import {FiGithub} from 'react-icons/fi'
-import {ContactContainer, ContactWrapper, ContactRow, Column1, Column2, TextWrapper, Heading, Subtitle, Icon, BtnWrap, ImgWrap, Img} from './ContactElements'
+import {ContactContainer, ContactWrapper, ContactRow, Column1, Column2, TextWrapper, Heading, Subtitle, Icon, BtnWrap, ImgWrap, Img, PDF} from './ContactElements'
 
 const Contact = () => {
     return(
@@ -43,7 +43,9 @@ const Contact = () => {
                         /jaeltg
                         </Subtitle>
                         <BtnWrap>
-                            <Button>Download CV</Button>
+                            <Button>
+                            <PDF href="../../pdfs/JTCV.pdf'" download>Download CV</PDF>
+                            </Button>
                         </BtnWrap>
                     </TextWrapper>
                 </Column2>

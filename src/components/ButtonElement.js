@@ -18,7 +18,6 @@ align-items: center;
 transition: all 0.2s ease-in-out;
 margin-right: 20px;
 
-
 &:hover {
     transition: all 0.2s ease-in-out;
     background: ${({primary}) => (primary ? '#A3A3A3' : '#A3A3A3')};

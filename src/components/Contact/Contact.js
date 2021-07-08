@@ -44,7 +44,7 @@ const Contact = () => {
                         </Subtitle>
                         <BtnWrap>
                             <Button>
-                            <PDF href="../../pdfs/JTCV.pdf'" download>Download CV</PDF>
+                            <PDF href="../../pdfs/JTCV.pdf" download>Download CV</PDF>
                             </Button>
                         </BtnWrap>
                     </TextWrapper>

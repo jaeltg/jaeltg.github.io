@@ -1,7 +1,6 @@
 import {Button} from '../ButtonElement'
 import {AiOutlinePhone, AiOutlineLinkedin} from 'react-icons/ai'
 import {HiOutlineMail} from 'react-icons/hi'
-import {FaLinkedin, FaGithub} from 'react-icons/fa'
 import {FiGithub} from 'react-icons/fi'
 import {ContactContainer, ContactWrapper, ContactRow, Column1, Column2, TextWrapper, Heading, Subtitle, Icon, BtnWrap, ImgWrap, Img} from './ContactElements'
 

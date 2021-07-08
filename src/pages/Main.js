@@ -4,6 +4,7 @@ import NavBar from '../components/NavBar/NavBar'
 import SideBar from '../components/SideBar/SideBar'
 import WorkList from '../components/Work/WorkList'
 import About from '../components/About/About'
+import Contact from '../components/Contact/Contact'
 
 function Main() {
     const [isOpen, setIsOpen] = useState(false)
@@ -19,6 +20,7 @@ function Main() {
           <Home/> 
           <About/>
           <WorkList/>
+          <Contact/>
         </>
     )
 }

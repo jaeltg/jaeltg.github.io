@@ -39,6 +39,7 @@ grid-area: col1;
 
 @media screen and (max-width: 768px) {
     text-align: center;
+    
 }
 `
 
@@ -66,12 +67,29 @@ color: white;
     font-size: 32px;
 }
 `
-
-export const Subtitle = styled.p `
+export const Intro = styled.p `
 max-width: 440px;
 margin-bottom: 35px;
 font-size: 18px;
 line-height: 24px;
+color: white;
+font-weight: bold;
+`
+
+export const Subtitle = styled.p `
+max-width: 440px;
+margin-bottom: 10px;
+font-size: 18px;
+line-height: 24px;
+color: white;
+font-weight: bold;
+`
+
+export const Par = styled.p `
+max-width: 440px;
+margin-bottom: 30px;
+font-size: 14px;
+line-height: 22px;
 color: white;
 font-weight: bold;
 `

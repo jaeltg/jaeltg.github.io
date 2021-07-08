@@ -1,5 +1,5 @@
 import {Button} from '../ButtonElement'
-import {AboutContainer, AboutWrapper, AboutRow, Column1, Column2, TextWrapper, Heading, Subtitle, BtnWrap, ImgWrap, Img} from './AboutElements'
+import {AboutContainer, AboutWrapper, AboutRow, Column1, Column2, TextWrapper, Heading, Intro, Subtitle, Par, BtnWrap, ImgWrap, Img} from './AboutElements'
 
 const About = () => {
     return(
@@ -10,14 +10,11 @@ const About = () => {
                   <Column1>
                       <TextWrapper>
                           <Heading>About Me</Heading>
-                          <Subtitle>I'm a new developer with a previous background on economics</Subtitle>
+                          <Intro>I'm a new developer with a previous background on economics</Intro>
                           <Subtitle>Languages</Subtitle>
-                          <p>JavaScript, Python, Java, HTML5, CSS</p>
+                          <Par>JavaScript, Python, Java, HTML5, CSS</Par>
                           <Subtitle>Technologies</Subtitle>
-                          <p>React, Vue, Spring, Express, MongoDB, Flask, PostgreSQL</p>
-                          <Subtitle>
-                          Download CV
-                          </Subtitle>
+                          <Par>React, Vue, Spring, Express, MongoDB, Flask, PostgreSQL</Par>
                           <BtnWrap>
                               <Button to='contact' 
                               smooth={true}
@@ -27,6 +24,7 @@ const About = () => {
                               offset={-80}
                               dark={true} 
                               primary={false}>Say Hello!</Button>
+                              <Button>Download CV</Button>
                           </BtnWrap>
                       </TextWrapper>
                   </Column1>

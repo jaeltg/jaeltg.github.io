@@ -1,17 +1,17 @@
 import React, {useRef} from 'react'
-import { useSpring, animated } from 'react-spring'
+// import { useSpring, animated } from 'react-spring'
 import { Background, ModalWrapper, ModalContent, ModalImg, CloseModalButton, Paragraph, Title, Button, BtnWrap } from './WorkPopupElements'
 
 const WorkPopup = ({image, title, explanation, visible, link1, link2, tech, showModal, setShowModal}) => {
     const modalRef = useRef()
 
-    const animation = useSpring({
-        config: {
-            duration: 250
-        },
-        opacity: showModal ? 1 : 0,
-        transform: showModal ? `translateY(0%)` : `translateY(-100%)`
-    })
+    // const animation = useSpring({
+    //     config: {
+    //         duration: 250
+    //     },
+    //     opacity: showModal ? 1 : 0,
+    //     transform: showModal ? `translateY(0%)` : `translateY(-100%)`
+    // })
 
     const closeModal = event => {
         if(modalRef.current === event.target) {
@@ -23,7 +23,6 @@ const WorkPopup = ({image, title, explanation, visible, link1, link2, tech, show
         <>
         {showModal ? 
             <Background ref={modalRef} onClick={closeModal}> 
-                <animated.div style={animation}>
                 <ModalWrapper>
                     <ModalImg src={image} alt='Yoga'/>
                     <ModalContent>
@@ -37,7 +36,6 @@ const WorkPopup = ({image, title, explanation, visible, link1, link2, tech, show
                     </ModalContent>
                     <CloseModalButton aria-label='Close Modal' onClick={() => setShowModal(prevValue => !prevValue)}/>
                 </ModalWrapper>
-                </animated.div>
             </Background>
          : null}
         </>

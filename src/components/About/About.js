@@ -1,5 +1,7 @@
 import {Button} from '../ButtonElement'
-import {AboutContainer, AboutWrapper, AboutRow, Column1, Column2, TextWrapper, Heading, Intro, Subtitle, Par, BtnWrap, ImgWrap, Img} from './AboutElements'
+import {Icon, AboutContainer, AboutWrapper, AboutRow, Column1, Column2, TextWrapper, Heading, Intro, Subtitle, Par, BtnWrap, ImgWrap, Img} from './AboutElements'
+import {SiFlask, SiPython, SiJinja, SiJava, SiJavascript, SiSpring, SiMongodb, SiPostgresql, SiCss3} from 'react-icons/si'
+import {FaVuejs, FaReact, FaNodeJs, FaHtml5} from 'react-icons/fa'
 
 const About = () => {
     return(
@@ -10,11 +12,52 @@ const About = () => {
                   <Column1>
                       <TextWrapper>
                           <Heading>About Me</Heading>
-                          <Intro>I'm a new developer with a previous background on economics</Intro>
+                          <Intro>I'm a new software developer who has always been passionate about creating! Before finding my true calling I worked as a economics consultant. I am ready to take on new challenges involving new technologies!</Intro>
                           <Subtitle>Languages</Subtitle>
-                          <Par>JavaScript, Python, Java, HTML5, CSS</Par>
+                          <Par>
+                            <Icon>
+                                <SiJavascript/> JavaScript
+                            </Icon>
+                            <Icon>
+                                <SiJava/> Java
+                            </Icon>
+                            <Icon>
+                                <SiPython/> Python
+                            </Icon>
+                            <Icon>
+                                <FaHtml5/> HTML5
+                            </Icon>
+                            <Icon>  
+                                <SiCss3/> CSS
+                            </Icon>  
+                          </Par>
                           <Subtitle>Technologies</Subtitle>
-                          <Par>React, Vue, Spring, Express, MongoDB, Flask, PostgreSQL</Par>
+                          <Par>
+                            <Icon>
+                                <FaReact/> React
+                            </Icon>
+                            <Icon>   
+                                <FaVuejs/> Vue
+                            </Icon>
+                            <Icon>   
+                                <FaNodeJs/> Node.js
+                            </Icon>
+                            <Icon>   
+                                <SiFlask/> Flask
+                            </Icon> 
+                            <Icon> 
+                                <SiJinja/> Jinja
+                            </Icon> 
+                            <Icon>  
+                                <SiSpring/> Spring
+                            </Icon> 
+                            <Icon> 
+                                <SiMongodb/> MongoDB
+                            </Icon> 
+                            <Icon> 
+                                <SiPostgresql/> PostgreSQL
+                            </Icon> 
+                          </Par>
                           <BtnWrap>
                               <Button to='contact' 
                               smooth={true}

@@ -78,7 +78,7 @@ font-weight: bold;
 
 export const Subtitle = styled.p `
 max-width: 440px;
-margin-bottom: 10px;
+margin-bottom: 16px;
 font-size: 18px;
 line-height: 24px;
 color: white;
@@ -87,11 +87,23 @@ font-weight: bold;
 
 export const Par = styled.p `
 max-width: 440px;
-margin-bottom: 30px;
+margin-bottom: 40px;
 font-size: 14px;
 line-height: 22px;
 color: white;
 font-weight: bold;
+display: flex;
+flex-flow: row wrap;
+justify-content: flex-start;
+gap: 10px;
+
+@media screen and (max-width: 768px) {
+    justify-content: center;
+`
+export const Icon = styled.div `
+display: grid;
+grid-template-rows: 1fr 1fr;
+justify-items: center;
 `
 
 export const BtnWrap = styled.div `

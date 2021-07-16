@@ -13,15 +13,15 @@ justify-content: center;
 align-items: center;
 `
 export const ModalWrapper = styled.div `
-width: 800px;
-height: 680px;
+width: 700px;
+height: 700px;
 box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
 background: #fff;
 color: #000;
 display: grid;
-grid-template-rows: 1fr 1fr;
+grid-template-rows: 1fr 3fr;
 position: relative;
-z-index: 99;
+z-index: 10;
 border-radius: 10px;
 `
 
@@ -33,7 +33,7 @@ background: #000;
 `
 
 export const ModalContent = styled.div `
-display:flex;
+display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
@@ -50,7 +50,6 @@ text-align: center;
 margin-bottom: 20px;
 padding-left: 15px;
 padding-right: 15px;
-
 `
 
 export const BtnWrap = styled.div `
@@ -58,14 +57,17 @@ display: flex;
 gap: 20px;
 `
 
-export const Button = styled.button `
+export const Button = styled.a `
 background: transparent;
 border: 3px solid #c9e265;
 border-radius: 8px;
-padding: 6px;
+padding: 4px;
+padding-right:6px;
+padding-left: 6px;
 color: #c9e265;
 font-weight: bolder;
 font-size: 15px;
+text-decoration: none;
 
 &:hover {
     background: #c9e265;

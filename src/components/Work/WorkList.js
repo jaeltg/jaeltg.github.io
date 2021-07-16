@@ -1,4 +1,4 @@
-import {WorkContainer, WorkH1, WorkWrapper, WorkCard, WorkImage, WorkH2, WorkP} from './WorkListElements'
+import {WorkContainer, WorkH1, WorkWrapper, WorkCard, WorkImage, WorkH2} from './WorkListElements'
 import Image1 from '../../images/Flex1.png'
 import Image2 from '../../images/Millionaire1.png'
 import Image3 from '../../images/Ward2.png'

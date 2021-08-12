@@ -49,7 +49,7 @@ background: #000;
 
 @media screen and (max-width: 480px) {
     width: 100%;
-    height: 80%;
+    height: 100%;
 }
 `
 
@@ -61,9 +61,6 @@ align-items: center;
 line-height: 1.8;
 color: #141414;
 
-@media screen and (max-width: 480px) {
-    justify-content: flex-start;
-}
 `
 
 export const Title = styled.h2 `

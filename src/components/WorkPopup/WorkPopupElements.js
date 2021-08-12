@@ -49,7 +49,7 @@ background: #000;
 
 @media screen and (max-width: 480px) {
     width: 100%;
-    height: 80%;
+    height: 100%;
 }
 `
 
@@ -62,7 +62,8 @@ line-height: 1.8;
 color: #141414;
 
 @media screen and (max-width: 480px) {
-   line-height: 1;
+   display: grid;
+   grid-template-rows: 1fr 1fr;
 }
 `
 

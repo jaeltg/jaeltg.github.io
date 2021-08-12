@@ -61,6 +61,9 @@ align-items: center;
 line-height: 1.8;
 color: #141414;
 
+@media screen and (max-width: 480px) {
+   line-height: 1;
+}
 `
 
 export const Title = styled.h2 `

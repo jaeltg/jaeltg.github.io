@@ -46,6 +46,11 @@ width: 100%;
 height: 100%;
 border-radius: 10px 10px 0px 0px;
 background: #000;
+
+@media screen and (max-width: 400px) {
+    width: 100%;
+    height: 70%;
+}
 `
 
 export const ModalContent = styled.div `

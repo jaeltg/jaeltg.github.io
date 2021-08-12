@@ -36,8 +36,8 @@ border-radius: 10px;
 }
 
 @media screen and (max-width: 480px) {
-    width: 300px;
-    height: 300px;
+    width: 400px;
+    height: 400px;
 }
 `
 
@@ -46,6 +46,11 @@ width: 100%;
 height: 100%;
 border-radius: 10px 10px 0px 0px;
 background: #000;
+
+@media screen and (max-width: 480px) {
+    width: 100%;
+    height: 80%;
+}
 `
 
 export const ModalContent = styled.div `

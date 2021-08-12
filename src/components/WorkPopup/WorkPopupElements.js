@@ -13,8 +13,8 @@ justify-content: center;
 align-items: center;
 `
 export const ModalWrapper = styled.div `
-width: 700px;
-height: 700px;
+width: 640px;
+height: 620px;
 box-shadow: 0 5px 16px rgba(0, 0, 0, 0.2);
 background: #fff;
 color: #000;
@@ -23,6 +23,17 @@ grid-template-rows: 1fr 3fr;
 position: relative;
 z-index: 10;
 border-radius: 10px;
+
+
+@media screen and (max-width: 1200px) {
+    width: 530px;
+    height: 530px;
+}
+
+@media screen and (max-width: 768px) {
+    width: 450px;
+    height: 450px;
+}
 `
 
 export const ModalImg = styled.img `
@@ -43,6 +54,17 @@ color: #141414;
 
 export const Title = styled.h2 `
 margin-bottom: 20px;
+font-size: 1.2rem;
+
+@media screen and (max-width: 1200px) {
+    font-size: 1.0rem;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
 `
 
 export const Paragraph = styled.p `
@@ -50,6 +72,17 @@ text-align: center;
 margin-bottom: 20px;
 padding-left: 15px;
 padding-right: 15px;
+font-size: 0.9rem;
+
+@media screen and (max-width: 1200px) {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    font-size: 0.7rem;
+    margin-bottom: 8px;
+}
 `
 
 export const BtnWrap = styled.div `
@@ -66,13 +99,21 @@ padding-right:6px;
 padding-left: 6px;
 color: #c9e265;
 font-weight: bolder;
-font-size: 15px;
+font-size: 0.9rem;
 text-decoration: none;
 
 &:hover {
     background: #c9e265;
     color: white;
     transition: all 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 1200px) {
+    font-size: 0.8rem;
+}
+
+@media screen and (max-width: 768px) {
+    font-size: 0.7rem;
 }
 `
 
@@ -85,5 +126,5 @@ width: 32px;
 height: 32px;
 padding: 0;
 z-index: 10;
-color: white,
+color: white;
 `

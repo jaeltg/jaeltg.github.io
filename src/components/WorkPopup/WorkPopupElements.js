@@ -35,7 +35,7 @@ border-radius: 10px;
     height: 450px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     width: 230px;
     height: 230px;
 }
@@ -47,7 +47,7 @@ height: 100%;
 border-radius: 10px 10px 0px 0px;
 background: #000;
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     width: 100%;
     height: 70%;
 }
@@ -76,7 +76,7 @@ font-size: 1.2rem;
     margin-bottom: 8px;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     font-size: 0.5rem;
     margin-bottom: 5px;
 }
@@ -136,7 +136,7 @@ text-decoration: none;
     font-size: 0.7rem;
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 480px) {
     font-size: 0.3rem;
 }
 `

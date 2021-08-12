@@ -34,6 +34,11 @@ border-radius: 10px;
     width: 450px;
     height: 450px;
 }
+
+@media screen and (max-width: 400px) {
+    width: 230px;
+    height: 230px;
+}
 `
 
 export const ModalImg = styled.img `
@@ -65,6 +70,11 @@ font-size: 1.2rem;
     font-size: 0.9rem;
     margin-bottom: 8px;
 }
+
+@media screen and (max-width: 400px) {
+    font-size: 0.5rem;
+    margin-bottom: 5px;
+}
 `
 
 export const Paragraph = styled.p `
@@ -82,6 +92,11 @@ font-size: 0.9rem;
 @media screen and (max-width: 768px) {
     font-size: 0.7rem;
     margin-bottom: 8px;
+}
+
+@media screen and (max-width: 400px) {
+    font-size: 0.3rem;
+    margin-bottom: 5px;
 }
 `
 
@@ -114,6 +129,10 @@ text-decoration: none;
 
 @media screen and (max-width: 768px) {
     font-size: 0.7rem;
+}
+
+@media screen and (max-width: 400px) {
+    font-size: 0.3rem;
 }
 `
 
